@@ -10,4 +10,5 @@ export default {
     '^.+\\.tsx?$': 'ts-jest',
   },
   moduleNameMapper: pathsToModuleNameMapper(compilerOptions.paths, { prefix: '<rootDir>/' } ),
+  setupFilesAfterEnv: ["jest-expect-message"]
 };
